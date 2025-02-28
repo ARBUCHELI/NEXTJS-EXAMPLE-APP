@@ -1,0 +1,22 @@
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    width: calc(100% - (2*3.75rem));
+    height: var(--footer-height);
+    padding-bottom: 2.5rem;
+  
+  }
+  
+  .footer>button {
+  
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    border-radius: 30px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.563rem 2.25rem;
+    height: fit-content;
+    cursor: pointer;
+  }

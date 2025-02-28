@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.125rem;
+    align-items: center;
+    height: var(--header-height);
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+  
+  .nav>a {
+    font-size: 1.125rem;
+  }
