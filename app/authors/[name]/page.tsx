@@ -1,4 +1,5 @@
 import { AUTHORS } from "../../../store/data"
+import Link from 'next/link'
 
 export default function AuthorsPage({ params }: { params: { name: string } }) {
   const author = AUTHORS[params.name]
@@ -9,7 +10,7 @@ export default function AuthorsPage({ params }: { params: { name: string } }) {
       <ul>
         {author && author.articles.map((slug) => (
           <li key={slug}>
-            <a href={"/articles/replace-me"}>{slug}</a>
+            <Link href={"/articles/replace-me"}>{slug}</Link>
           </li>
         ))}
       </ul>
