@@ -27,12 +27,12 @@ import ReactMarkdown from 'react-markdown';
 import styles from './page.module.css';
 
 // Define the type for the article (adjust based on your actual data structure)
-type Article = {
+/*type Article = {
   slug: string;
   title: string;
   author: string;
   body: string;
-};
+};*/
 
 // Define the type for the component props
 type Props = {
