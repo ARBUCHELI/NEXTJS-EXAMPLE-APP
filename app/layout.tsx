@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import '../globals.css'
 import Footer from '../components/Footer'
 import Navigation from '../components/Navigation'
-import UrlBar from '../components/UrlBar/UrlBar'
+
 
 export const metadata: Metadata = {
   title: 'Articler Reader',

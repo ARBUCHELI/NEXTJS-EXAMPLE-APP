@@ -14,7 +14,7 @@ export default function UrlBar({baseURL} : {baseURL: string}) {
 
   useEffect(() => {
     setInputURL(baseURL + pathname);
-  }, [pathname])
+  }, [])
 
   return(
     <form className={styles.urlForm} action={navigate}>
