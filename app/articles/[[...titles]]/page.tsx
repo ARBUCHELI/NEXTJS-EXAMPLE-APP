@@ -2,8 +2,16 @@ import { ARTICLES } from '../../../store/data'
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import styles from './page.module.css'
-export default function ArticlePage({ params }: { params: { titles?: string[] | undefined } }) {
-  const foundArticles = params.titles?.map(title => ARTICLES[title]) || [];
+
+
+type Props = {
+  params: {
+    titles?: string[];
+  };
+};
+export default function ArticlePage({ params }: Props) {
+  const { titles } = params;
+  const foundArticles = titles?.map(title => ARTICLES[title]) || [];
   
   return (
     <section className={styles.articlesContainer}>
